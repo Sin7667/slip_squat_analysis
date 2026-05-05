@@ -212,5 +212,5 @@ These weights can be adjusted in `functions/cost_fn_symmetric.m` and `functions/
 
 ## License
 
-This code is part of a master's thesis project.  
+This code is part of a bachelor's thesis project.  
 Please cite appropriately if used in academic work.
