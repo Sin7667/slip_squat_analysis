@@ -1,0 +1,11 @@
+# Raw data – never upload
+*.sto
+*.mot
+*.mat
+*.xlsx
+*.mp4
+*.gif
+
+# Result folders
+Results_*/
+Plots_*/
