@@ -13,7 +13,6 @@ function cfg = get_subject_config(subject_id)
 %   cfg.subject_id     – integer
 %   cfg.subject_tag    – string, e.g. 'S13'
 %   cfg.gender         – 'M' or 'F'
-%   cfg.category       – free-text label (e.g. 'healthy_young')
 %   cfg.forward_axis   – always 'X': the global axis for the sagittal
 %                        direction in all BodyKinematics files.
 %   cfg.kin_prefix     – filename prefix of the BodyKinematics .sto files.
@@ -47,7 +46,6 @@ switch subject_id
     % ------------------------------------------------------------------ %
     case 13
         cfg.gender         = 'F';
-        cfg.category       = 'healthy';
         cfg.forward_axis   = 'X';   % sagittal = global X (same as all other subjects)
         cfg.kin_prefix     = 'S13_';
         cfg.segment_prefix = '';    % files: Segment_E1_*.mat
@@ -60,7 +58,6 @@ switch subject_id
     % ------------------------------------------------------------------ %
     case 14
         cfg.gender         = 'M';
-        cfg.category       = 'healthy';
         cfg.forward_axis   = 'X';
         cfg.kin_prefix     = 'S14_';
         cfg.segment_prefix = 'S14_';
@@ -73,7 +70,6 @@ switch subject_id
     % ------------------------------------------------------------------ %
     case 15
         cfg.gender         = 'F';
-        cfg.category       = 'healthy';
         cfg.forward_axis   = 'X';
         cfg.kin_prefix     = '';    % S15 .sto files have no subject prefix
         cfg.segment_prefix = 'S15_';
@@ -86,7 +82,6 @@ switch subject_id
     % ------------------------------------------------------------------ %
     case 16
         cfg.gender         = 'M';
-        cfg.category       = 'healthy';
         cfg.forward_axis   = 'X';
         cfg.kin_prefix     = '';    % S16 .sto files have no subject prefix
         cfg.segment_prefix = 'S16_';
