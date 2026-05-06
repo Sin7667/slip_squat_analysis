@@ -24,8 +24,8 @@ end
 
 kL  = abs(tab.k_L_Nm(mask));
 kR  = abs(tab.k_R_Nm(mask));
-L0L = tab.L0_L_m(mask);
-L0R = tab.L0_R_m(mask);
+L0L = abs(tab.L0_L_m(mask));
+L0R = abs(tab.L0_R_m(mask));
 
 % Remove obvious outliers (NaN)
 kL  = kL(isfinite(kL));   kR  = kR(isfinite(kR));
